@@ -70,7 +70,7 @@ table {
 
 /* endregion */
 
-/* region ヘッダーの設定 */
+/* region headerの設定 */
 header {
   background-color: rgba($black_1, 0.8);
   ul {
@@ -92,9 +92,42 @@ header {
 }
 /* endregion */
 
+/* region footerの設定 */
+footer {
+  background-color: rgba($black_1, 0.8);
+  ul {
+    padding: 16px;
+    color: $white_1;
+  }
+  p {
+    padding-bottom: 24px;
+    font-size: 16px;
+    color: $white_1;
+  }
+  a {
+    font-size: 14px;
+    color: $gray_6;
+  }
+  a:hover {
+    color: $gray_4;
+    transition: 0.5s;
+  }
+}
+/* endregion */
+
 /* region 共通の設定 */
 .container {
   width: 100%;
   margin: 0 auto;
+}
+
+.title {
+  color: $black_1;
+  font-size: 48px;
+}
+
+.message {
+  color: $black_1;
+  font-size: 20px;
 }
 /* endregion */
