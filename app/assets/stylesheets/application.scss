@@ -90,6 +90,12 @@ header {
     transition: 0.5s;
   }
 }
+
+.header-fixed {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
 /* endregion */
 
 /* region footerの設定 */
