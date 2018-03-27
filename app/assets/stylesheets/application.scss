@@ -15,6 +15,7 @@
  */
 
 @import "values/color";
+@import "values/dimen";
 
 /* region リセット設定 */
 html, body, div, span, applet, object, iframe,
@@ -72,17 +73,19 @@ table {
 
 /* region headerの設定 */
 header {
+  height: $header_height;
   background-color: rgba($black_1, 0.8);
   ul {
     text-align: center;
-    padding: 16px 0;
   }
   li {
     display: inline;
     padding: 0 8px;
   }
   a {
-    padding: 16px;
+    display: inline-block;
+    padding: 0 16px;
+    line-height: $header_height;
     color: $white_1;
   }
   a:hover {
@@ -135,5 +138,11 @@ footer {
 .message {
   color: $black_1;
   font-size: 20px;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 0 4px 0 $gray_4;
+  border-radius: 12px;
 }
 /* endregion */

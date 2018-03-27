@@ -1,3 +1,61 @@
 // Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
+// They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "values/color";
+
+/* region index画面の設定 */
+.index-wrapper {
+  .top-wrapper {
+    background: url("img_pc_1.jpg") no-repeat fixed center center;
+    background-size: cover;
+    .container {
+      padding: 420px 0;
+      text-align: center;
+      h1 {
+        color: $white_1;
+        font-size: 48px;
+      }
+      p {
+        color: $white_1;
+        font-size: 20px;
+      }
+    }
+  }
+  .service-wrapper {
+    .container {
+      padding: 420px 0;
+      text-align: center;
+    }
+  }
+  .contact-wrapper {
+    background: url("img_note_2.jpg") no-repeat fixed center center;
+    background-size: cover;
+    .container {
+      padding: 420px 0;
+      text-align: center;
+    }
+  }
+}
+/* endregion */
+
+/* region 共通の設定 */
+.btn-scroll-top {
+  position: fixed;
+  z-index: 1;
+  float: right;
+  right: 32px;
+  bottom: 32px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: $white_1;
+  box-shadow: 0 0 4px 0 $gray_4;
+  cursor: pointer;
+  p {
+    line-height: 64px;
+    font-size: 16px;
+  }
+}
+/* endregion */
